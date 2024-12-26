@@ -1,27 +1,25 @@
 import "./App.css";
-import React, { useEffect } from "react";
-import Home from "./Components/Home";
+import React from "react";
 import About from "./Components/About";
-import { Routes, Route, useLocation } from "react-router-dom";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
+import Skills from "./Components/Skills";
+import Experience from "./Components/Experience";
 
 function App() {
-  const ScrollToTop = () => {
-    const location = useLocation();
-
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, [location]);
-
-    return null;
-  };
   return (
-    <>
-      <ScrollToTop />
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </>
+    <div>
+      <header>
+        <h1>Welcome, I'm Maura Sweeney</h1>
+      </header>
+      <main>
+        <About />
+        <Projects />
+        <Experience />
+        <Skills />
+        <Contact />
+      </main>
+    </div>
   );
 }
 
