@@ -1,6 +1,8 @@
+import React from "react";
+
 const Projects = () => {
   return (
-    <section id="projects">
+    <section className="slide-in" id="projects">
       <h2>My Projects</h2>
       <p>This is the projects section.</p>
     </section>

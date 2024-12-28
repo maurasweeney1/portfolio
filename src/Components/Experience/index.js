@@ -1,6 +1,8 @@
+import React from "react";
+
 const Experience = () => {
   return (
-    <section id="experience">
+    <section className="slide-in" id="experience">
       <h2>My Experience</h2>
       <p>This is the experience section.</p>
     </section>
