@@ -35,7 +35,7 @@ const About = () => {
           <h2 className="about-header">About Me</h2>
           <div className="about-content">
             <div className="about-intro">
-              <img src={meInLisbon} alt="Image of me" className="about-image" />
+              <img src={meInLisbon} alt="Me in Lison" className="about-image" />
               <div className="about-text">
                 <p>
                   I am a junior at Gonzaga University graduating May 2026. I've
