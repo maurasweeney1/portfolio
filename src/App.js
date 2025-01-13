@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
@@ -9,6 +9,8 @@ import Contact from "./Components/Contact";
 function App() {
   const [activeSection, setActiveSection] = useState("");
   const [progress, setProgress] = useState(0);
+  const [markerPositions, setMarkerPositions] = useState([]);
+  const progressContainerRef = useRef(null);
 
   const sections = [
     { id: "welcome", title: "Welcome" },
@@ -71,7 +73,6 @@ function App() {
       const windowHeight = window.innerHeight;
       const middle =
         absoluteElementTop - windowHeight / 2 + elementRect.height / 2;
-
       window.scrollTo({
         top: middle,
         behavior: "smooth",
