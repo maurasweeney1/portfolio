@@ -119,6 +119,38 @@ h2 {
 .slide-in.visible {
   opacity: 1;
   transform: translateX(0);
+  transform: translateX(0) !important;
+}
+
+.slide-in .slide-in {
+  opacity: 1;
+  transform: none;
+}
+
+.slide-in>* {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.6s ease-out;
+  transition-delay: 0.2s;
+}
+
+.slide-in.visible>* {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide-in {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .slide-in>* {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /* Sidebar Progress Bar */
@@ -630,8 +662,11 @@ h2 {
 }
 
 /* Experience Section */
-.timeline {
+#experience {
   margin-left: 20px;
+}
+
+.timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
@@ -647,6 +682,7 @@ h2 {
   bottom: 0;
   left: 54px;
   margin-left: -1px;
+  z-index: 1;
 }
 
 .timeline-item {
@@ -657,11 +693,23 @@ h2 {
   background: #8997ac3e;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item:hover .timeline-icon svg {
+  stroke: white;
+  transition: stroke 0.3s ease;
 }
 
 .timeline-icon {
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  flex-shrink: 0;
   width: 56px;
   height: 56px;
   background: #1F2937;
@@ -681,6 +729,7 @@ h2 {
   flex: 1;
   padding-top: 8px;
   position: relative;
+  z-index: 1;
 }
 
 .timeline-content::before {
@@ -714,17 +763,25 @@ h2 {
 }
 
 .timeline-description {
-  color: #ffffff;
+  color: #1F2937;
   line-height: 1.6;
-  padding: 20px;
   border-radius: 4px;
   position: relative;
+  list-style-type: none;
+  padding-left: 0;
 }
 
-.slide-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: slideIn 0.5s ease forwards;
+.timeline-description li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.timeline-description li::before {
+  content: "•";
+  position: absolute;
+  left: 0.5em;
+  color: #1F2937;
 }
 
 @keyframes slideIn {
@@ -759,5 +816,13 @@ h2 {
 
   .timeline-content::before {
     left: -15px;
+  }
+
+  .timeline-description li {
+    padding-left: 1.2em;
+  }
+  
+  .timeline-description li::before {
+    left: 0.3em;
   }
 }

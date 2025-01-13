@@ -44,7 +44,7 @@ const Projects = () => {
     <section id="projects">
       <h2>My Projects</h2>
       {indivProjects.map((project, index) => (
-        <div key={index} className="project-card">
+        <div key={index} className="project-card slide-in">
           <div className="image-container">
             <img
               src={project.image}
