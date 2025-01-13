@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7dfbdbb9c1668077e97472caa43e4bec",
+    "revision": "6b873e9588f61c377eaa782de1700120",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "6036d78cf373f00c3a81",
-    "url": "/portfolio/static/css/main.242476a5.chunk.css"
+    "revision": "37b74a6e13c286d69f4c",
+    "url": "/portfolio/static/css/main.5681ab59.chunk.css"
   },
   {
     "revision": "40b0209449de47ac9af2",
@@ -20,12 +20,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/3.c4a02741.chunk.js"
   },
   {
-    "revision": "6036d78cf373f00c3a81",
-    "url": "/portfolio/static/js/main.e2c7e859.chunk.js"
+    "revision": "37b74a6e13c286d69f4c",
+    "url": "/portfolio/static/js/main.3dd3d897.chunk.js"
   },
   {
     "revision": "cb8b25edf9018ee4eff7",
     "url": "/portfolio/static/js/runtime-main.7e29e343.js"
+  },
+  {
+    "revision": "e9950d4cb877dd241377559130d90758",
+    "url": "/portfolio/static/media/course.e9950d4c.png"
   },
   {
     "revision": "dd42bbb44518bb558aa32cdcc26cac14",
