@@ -41,7 +41,7 @@ const Projects = () => {
     },
   ];
   return (
-    <section className="slide-in" id="projects">
+    <section id="projects">
       <h2>My Projects</h2>
       {indivProjects.map((project, index) => (
         <div key={index} className="project-card">
