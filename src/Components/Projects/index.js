@@ -34,7 +34,7 @@ const Projects = () => {
       title: "Rent Splitter",
       description:
         "A new website **currently in progress** that aims to make split payments seamless, and stress free. The project allows you to put in designated payment amounts, set reminders, and add roommate groups.",
-      image: /*"rent-splitter-preview.png"*/ "",
+      image: "rent-splitter-preview.png",
       link: "https://github.com/maurasweeney1/RentSplitter#setup",
       github: "https://github.com/maurasweeney1/RentSplitter",
       tools: ["Java", "MySQL", "Maven", "JUnit Jupiter", "Docker"],

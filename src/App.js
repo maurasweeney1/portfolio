@@ -9,8 +9,6 @@ import Contact from "./Components/Contact";
 function App() {
   const [activeSection, setActiveSection] = useState("");
   const [progress, setProgress] = useState(0);
-  const [markerPositions, setMarkerPositions] = useState([]);
-  const progressContainerRef = useRef(null);
 
   const sections = [
     { id: "welcome", title: "Welcome" },
