@@ -80,7 +80,9 @@ body {
 .welcome-section .name span:nth-child(12) {
   animation-delay: 1.2s;
 
-}.welcome-section .name span:nth-child(13) {
+}
+
+.welcome-section .name span:nth-child(13) {
   animation-delay: 1.3s;
 }
 
@@ -190,7 +192,7 @@ h2 {
 
 .section-title {
   position: absolute;
-  left: 28px; 
+  left: 28px;
   white-space: nowrap;
   background: #fff;
   padding: 4px 8px;
@@ -424,7 +426,6 @@ h2 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 2px solid rgb(125, 125, 125);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   object-fit: contain;
   transition: transform 0.3s ease;
@@ -434,12 +435,13 @@ h2 {
   transform: scale(1.2);
 }
 
-.tools-list, .courses-list {
+.tools-list,
+.courses-list {
   list-style: none;
   padding: 0;
 }
 
-.tools-list li, 
+.tools-list li,
 .courses-list li {
   padding: 0.5rem 0;
   position: relative;
@@ -507,5 +509,120 @@ h2 {
   .languages {
     grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
     gap: 1rem;
+  }
+}
+
+/* Projects Section */
+#projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin-top: -20px;
+}
+
+#projects h2 {
+  margin-bottom: 1rem;
+}
+
+.project-card {
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.image-container {
+  position: relative;
+}
+
+.open-button {
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+}
+
+.open-icon {
+  width: 40px;
+  height: 40px;
+  transition: opacity 0.2s;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.open-icon:hover {
+  background-color: rgb(225, 225, 225);
+}
+
+.project-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.github-link {
+  padding: 0.5rem;
+  border-radius: 9999px;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.github-link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.project-description {
+  color: #666;
+}
+
+.project-footer {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tool-tag {
+  padding: 0.25rem 0.75rem;
+  background-color: #e6f0ff;
+  color: #1e40af;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  #projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #projects h2 {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 768px) {
+  #projects {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
