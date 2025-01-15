@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fe6295e3bf6874eb95af447599478b77",
+    "revision": "7d5877989c6f28914738a19cb744cd1d",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "ab0f682b2061a5313688",
+    "revision": "8759837537a701842b4e",
     "url": "/portfolio/static/css/main.4fa72d1c.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/3.4df81e86.chunk.js"
   },
   {
-    "revision": "ab0f682b2061a5313688",
-    "url": "/portfolio/static/js/main.06f70257.chunk.js"
+    "revision": "8759837537a701842b4e",
+    "url": "/portfolio/static/js/main.e4dbd839.chunk.js"
   },
   {
     "revision": "ea895b6001d220e18177",
@@ -32,12 +32,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/course.e9950d4c.png"
   },
   {
-    "revision": "78302b30fe20915b34debc0f0a5224c5",
-    "url": "/portfolio/static/media/me-at-a-game.78302b30.jpg"
+    "revision": "60b2be7074adbf09917cb8ef90666a62",
+    "url": "/portfolio/static/media/me-at-a-game.60b2be70.jpg"
   },
   {
-    "revision": "8429fb01776fee8bfbdfe4c4a1a5eccc",
-    "url": "/portfolio/static/media/me-hiking.8429fb01.jpg"
+    "revision": "0a4e41471bfeb5c92d00df8fe76ec967",
+    "url": "/portfolio/static/media/me-hiking.0a4e4147.jpg"
   },
   {
     "revision": "fcc03ef27c601591af30811fc671924e",
